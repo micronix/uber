@@ -1,0 +1,7 @@
+<% if @ride %>
+    <h1>Your driver is <%= @driver.email %></h1>
+<% else %>
+    <%= form_tag '' do %>
+        <%= submit_tag 'REQUEST RIDE' %>
+    <% end %>
+<% end %>
